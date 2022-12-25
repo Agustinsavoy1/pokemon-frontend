@@ -1,0 +1,242 @@
+.fullCard {
+  --size-divisor: 1;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: -400px;
+}
+
+.backgroundIndex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.waitingBall {
+  margin-top: 240px;
+  margin-right: 30px;
+  border-radius: 1000px;
+  max-width: 250px;
+  box-shadow: 1px 1px 20px 1px rgb(9, 5, 75);
+}
+
+.Card {
+  z-index: 30;
+  /* display: inline-block; */
+  /* background-image: url('../../images/backCard.png'); */
+  border-radius: 30px;
+  box-shadow: 1px 1px 20px 1px rgb(9, 5, 75);
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  min-height: 415px;
+  max-width: 400px;
+  /* min-width: 200px; */
+  width: 300px;
+}
+
+.CardHover:hover {
+  /* cursor: pointer; */
+  box-shadow: 3px 3px 15px 2px rgb(156, 126, 198);
+  /* transform: scale(1.02) rotate(0.1deg); */
+}
+
+.Card:hover > .imagePokemon {
+  transform: scale(1.005) rotate(1deg);
+}
+
+.backImageBlue {
+  position: absolute;
+  z-index: -10;
+  height: 369px;
+  /* width: 320px; */
+  margin-top: 24px;
+  margin-left: -147px;
+  border-radius: 2px 10px 30px 0px;
+  animation: backImgAnim 25s ease-in-out infinite;
+}
+
+.Card:hover > .backImageBlue {
+  animation: backImgAnim 2s ease-in-out infinite;
+}
+
+@keyframes backImgAnim {
+  0% {
+    filter: hue-rotate(-10deg);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+  }
+  100% {
+    filter: hue-rotate(-10deg);
+  }
+}
+
+.imagePokemon {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+}
+/* 
+ .imagePokemon:hover {
+  transform:rotate(3deg) scale(1.06);
+  }  */
+
+img {
+  transition: transform 0.7s ease-in-out;
+}
+
+.loading {
+  margin-top: 5px;
+  /* margin-bottom: -300px; */
+  margin-right: 10px;
+  display: inline-block;
+  max-width: 160px;
+}
+
+.cardName {
+  z-index: 20;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-left: 0px;
+  text-decoration: none;
+  color: rgba(192, 220, 36, 0.778);
+  box-sizing: content-box;
+  width: 100%;
+  transform: rotate(30deg);
+}
+
+.contTypId {
+  /* display: flex; */
+  flex-direction: row;
+}
+
+.idCard {
+  /* display: flex; */
+  margin-right: 20px;
+  margin-top: 0px;
+}
+
+.cardTypeIcon {
+  border-radius: 30px;
+  box-shadow: 0.1rem -0.5rem 0.1rem rgba(11, 123, 188, 0.666);
+  color: rgba(159, 205, 22, 0.722);
+  font-size: 1.4rem;
+  font-style: oblique;
+  display: flex;
+  margin-left: 1px;
+  margin-right: 215px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding-left: 18px;
+}
+
+.cardTypes {
+  border-radius: 30px;
+  box-shadow: 0.1rem -0.1rem 0.1rem rgba(212, 233, 24, 0.366);
+  z-index: 1;
+  display: flex;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-family: monospace;
+  margin-top: -70px;
+  margin-left: 210px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(223, 143, 51);
+}
+
+.Card:hover > .cardTypeIcon {
+  transform: scale(1.02) rotate(2deg);
+}
+
+.attackData {
+  align-self: center;
+  display: flex;
+  margin-top: -46px;
+  margin-left: 87px;
+  margin-right: 90px;
+  padding-left: 13px;
+  border-radius: 30px;
+  box-shadow: -0.1rem 0.36rem 0.1rem rgba(11, 123, 188, 0.666);
+  color: rgba(159, 205, 22, 0.722);
+  border-left: 0.1rem;
+  border-right: 0.1rem;
+  font-size: 1.07rem;
+  font-style: oblique;
+  max-height: 30px;
+}
+
+.buttonPagination {
+  justify-content: center;
+  margin-top: -500px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Card {
+    scale: 0.9;
+    margin: -4px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .backgroundIndex {
+    width: 102%;
+  }
+
+  .Card {
+    scale: 0.75;
+    margin: -32px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .backgroundIndex {
+    margin-left: -70px;
+    width: 110%;
+  }
+
+  .Card {
+    scale: 0.7;
+    margin: -42px -78px -70px 0px;
+  }
+}
+
+@media only screen and (max-width: 687px) {
+  .backgroundIndex {
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .Card {
+    /* scale: 0.7; */
+    margin: -20px -20px -90px -60px;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .backgroundIndex {
+    width: 100%;
+  }
+
+  .Card {
+    position: relative;
+    scale: 0.95;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+@media only screen and (max-width: 297px) {
+  .Card {
+    scale: 0.8;
+    margin: -30px;
+  }
+}

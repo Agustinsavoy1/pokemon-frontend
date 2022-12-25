@@ -1,0 +1,376 @@
+@import "./mediaQuerys.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.selectForm {
+  margin-right: 20px;
+}
+
+.onlyForm {
+  margin: 0;
+}
+
+.formNav {
+  min-height: 136px;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  background-image: radial-gradient(
+    rgba(193, 35, 35, 0.286),
+    rgba(8, 8, 122, 0.218)
+  );
+}
+
+.formNavDetails {
+  position: absolute;
+  height: 50px;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  background-image: radial-gradient(
+    rgba(193, 35, 35, 0.286),
+    rgba(8, 8, 122, 0.218)
+  );
+}
+
+.formNavDetailsCreate {
+  min-height: 70px;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background-image: radial-gradient(
+    rgba(193, 35, 35, 0.286),
+    rgba(8, 8, 122, 0.218)
+  );
+}
+
+.inputContainer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+
+  /* margin-left: -115px; */
+}
+
+.inputContainer input {
+  max-height: 20px;
+  width: 400px;
+  margin-right: 0;
+  cursor: text;
+  padding: 16px 4rem;
+  background: rgb(255, 255, 255);
+  font-weight: bold;
+  color: rgb(10, 73, 107);
+  font-size: 1.3rem;
+  border: 1.2px solid rgb(20, 136, 199);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+  box-shadow: 0.04rem 0.04rem 1rem rgb(193, 35, 35),
+    -0.04rem -0.04rem 1rem rgb(8, 8, 122);
+}
+
+.gifLoading {
+  width: 40px;
+}
+
+.dropdown {
+  z-index: 100;
+  /* width: 100%; */
+  position: static;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.contInter {
+  position: absolute;
+  z-index: 100;
+  width: 390px;
+  margin-top: 89px;
+  margin-right: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 4px linear;
+}
+
+.divInput {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: var(--cursor-point);
+  text-align: center;
+  padding: 0;
+  margin-left: 2px;
+  width: 385px;
+  border-top: 1px groove rgba(35, 114, 225, 0.091);
+}
+
+.spanInput {
+  display: flex;
+  flex: 1 1 16px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-left: 140px;
+}
+
+.spanType {
+  display: flex;
+  align-self: center;
+  flex: 1 1 16px;
+  font-size: 13px;
+  color: rgba(32, 111, 207, 0.624);
+  padding-left: 5px;
+  margin-right: 0;
+}
+
+input {
+  text-align: center;
+}
+
+.searchInput:hover {
+  box-shadow: 2px 2px 1rem rgb(187, 3, 77), -2rem -2rem -1rem rgb(31, 7, 149);
+}
+
+.searchInput:active {
+  /* border-style: none; */
+  box-shadow: 0.15rem 0.15rem 0.5rem rgb(8, 8, 122),
+    -0.1rem -0.1rem 0.5rem rgb(187, 3, 35);
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInput::placeholder {
+  font: 22px/3 sans-serif;
+}
+
+/* search button */
+.searchButton {
+  position: absolute;
+  z-index: 130;
+  margin-left: 5px;
+  margin-top: -2px;
+  background-color: rgba(20, 136, 199, 0.8);
+  font-weight: bold;
+  color: rgb(210, 185, 84);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgb(20, 136, 199);
+  cursor: var(--cursor-point);
+  /* transition: all 0.2s ease; */
+  border-radius: 50px;
+}
+
+.searchButton:hover {
+  background-color: rgba(20, 136, 199);
+  border: 2px solid rgba(20, 136, 199);
+}
+
+.searchButton:active {
+  box-shadow: 0.1rem 0.1rem 10rem rgb(8, 8, 122),
+    -0.3rem -0.3rem 1rem rgb(187, 3, 35);
+}
+
+.homeAndCreate {
+  display: flex;
+  flex-direction: row;
+}
+
+.onlyHome {
+  display: flex;
+}
+
+.bannerNavBar {
+  position: sticky;
+  padding: 0;
+  align-self: center;
+  margin-left: 12.8rem;
+  margin-right: auto;
+  min-width: 8%;
+  min-height: 100%;
+  width: 8%;
+  height: 100%;
+}
+
+.homeButtonCreate {
+  position: absolute;
+  background-color: rgba(20, 136, 199, 0.835);
+  background-size: 90px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  left: 0;
+  font-weight: bold;
+  color: rgb(210, 185, 84);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(20, 136, 199, 0.569);
+  cursor: var(--cursor-point);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+/* home button */
+.homeButton {
+  background-color: rgba(20, 136, 199, 0.835);
+  background-size: 90px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 1.7rem;
+  font-weight: bold;
+  color: rgb(210, 185, 84);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(20, 136, 199, 0.569);
+  cursor: var(--cursor-point);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+.homeButton:hover {
+  background-color: rgba(20, 136, 199, 0.432);
+  box-shadow: 2px 2px 1rem rgb(187, 3, 77), -0.3rem -0.3rem 1rem rgb(31, 7, 149);
+  border: 2px solid rgba(20, 136, 199, 0.227);
+}
+
+.homeButton:active {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(8, 8, 122),
+    -0.3rem -0.3rem 1rem rgb(187, 3, 35);
+}
+
+.homeButtonDetails {
+  margin-left: 400px;
+}
+
+.homeButtonHome {
+  margin-left: 500px;
+}
+
+.createButton {
+  margin-bottom: 3px;
+  margin-top: 10px;
+  margin-right: 150px;
+  margin-left: 0.7rem;
+  display: flex;
+  background-color: rgb(210, 185, 84);
+  background-size: 90px;
+  font-weight: bold;
+  color: rgba(20, 136, 199, 0.835);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(210, 185, 84, 0.33);
+  cursor: var(--cursor-point);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+.createButton:hover {
+  background-color: rgba(20, 136, 199, 0.432);
+  box-shadow: 2px 2px 1rem rgb(187, 3, 77), -0.3rem -0.3rem 1rem rgb(31, 7, 149);
+  border: 2px solid rgba(20, 136, 199, 0.227);
+}
+
+.createButton:active {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(8, 8, 122),
+    -0.3rem -0.3rem 1rem rgb(187, 3, 35);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  max-height: 50px;
+  padding-top: 10px;
+  margin-left: 100px;
+}
+
+.selectOption1 {
+  display: table-row;
+  background-color: rgba(20, 136, 199, 0.835);
+  background-size: 90px;
+  margin-left: -85px;
+  font-weight: bold;
+  color: rgb(210, 185, 84);
+  font-size: 1rem;
+  border: 2px solid rgba(20, 136, 199, 0.569);
+  cursor: var(--cursor-point);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+.selectOption1:active {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(8, 8, 122),
+    -0.3rem -0.3rem 1rem rgb(187, 3, 35);
+}
+.selectOption1:focus {
+  outline: none;
+}
+
+.selectOption1:after {
+  border-radius: 50px;
+}
+
+.selectOption2 {
+  display: table-row;
+  background-color: rgba(20, 136, 199, 0.835);
+  background-size: 90px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: rgb(210, 185, 84);
+  font-size: 1rem;
+  border: 2px solid rgba(20, 136, 199, 0.569);
+  cursor: var(--cursor-point);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+.selectOption2:active {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(8, 8, 122),
+    -0.3rem -0.3rem 1rem rgb(187, 3, 35);
+}
+.selectOption2:focus {
+  outline: none;
+}
+
+.selectOption2:after {
+  border-radius: 50px;
+}
+
+.selectOption3 {
+  display: table-row;
+  background-color: rgba(20, 136, 199, 0.835);
+  background-size: 90px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: rgb(210, 185, 84);
+  font-size: 1rem;
+  border: 2px solid rgba(20, 136, 199, 0.569);
+  cursor: var(--cursor-point);
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+.selectOption3:active {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(8, 8, 122),
+    -0.3rem -0.3rem 1rem rgb(187, 3, 35);
+}
+.selectOption3:focus {
+  outline: none;
+}
+
+.selectOption3:after {
+  border-radius: 50px;
+}

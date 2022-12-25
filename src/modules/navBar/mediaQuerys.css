@@ -1,0 +1,246 @@
+@media only screen and (max-width: 1363px) {
+  .spanInput {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .allContainer {
+    /* scale: 1; */
+    margin-left: -20px;
+  }
+  .contInter {
+    margin-left: -23px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .allContainer {
+    margin-left: -25px;
+  }
+  .contInter {
+    top: -5px;
+    margin-left: -26px;
+    max-width: 310px;
+  }
+  .searchInput {
+    max-width: 320px;
+  }
+  .searchInput::placeholder {
+    scale: 0.8;
+    width: 110%;
+  }
+  .divInput {
+    position: relative;
+    left: -30px;
+    border: none;
+    max-width: 338px;
+  }
+  .spanInput {
+    margin-left: -20px;
+  }
+  .homeButton {
+    height: 32px;
+    position: relative;
+    left: 23%;
+    /* width: 13%; */
+  }
+  .createButton {
+    height: 32px;
+    position: relative;
+    left: 23%;
+    /* width: 14.3%; */
+  }
+  .filters > select {
+    width: 90px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 613px) {
+  .allContainer {
+    margin-left: -24px;
+  }
+  .contInter {
+    margin-left: -95px;
+    max-width: 280px;
+  }
+  .searchInput {
+    margin-left: -70px;
+    max-width: 290px;
+  }
+  .searchInput::placeholder {
+    position: absolute;
+    scale: 0.6;
+    top: 4px;
+    left: -40px;
+    margin-right: 200px;
+    width: 130%;
+  }
+  .filters > select {
+    font-size: 13px;
+    width: 80px;
+  }
+  .divInput {
+    position: relative;
+    left: -40px;
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 422px) {
+  .allContainer {
+    margin-left: -24px;
+  }
+  .searchInput {
+    margin-left: -60px;
+    max-width: 250px;
+  }
+  .contInter {
+    margin-left: -83px;
+    max-width: 240px;
+  }
+  .divInput {
+    position: relative;
+    left: -65px;
+    max-width: 305px;
+  }
+  .searchButton {
+    left: 73%;
+    top: 51px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 392px) {
+  .searchInput {
+    margin-left: -60px;
+    max-width: 230px;
+  }
+  .contInter {
+    top: -7px;
+    margin-left: -84px;
+    max-width: 220px;
+  }
+  .divInput {
+    position: relative;
+    left: -80px;
+    max-width: 297px;
+  }
+  .searchButton {
+    left: 71.5%;
+    top: 49px;
+  }
+  .createButton {
+    height: 30px;
+    /* width: 80px; */
+    scale: 0.9;
+  }
+  .homeButton {
+    height: 30px;
+    /* width: 80px; */
+    scale: 0.9;
+  }
+  .filters > select {
+    width: 60px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .allContainer {
+    margin-left: -24px;
+  }
+  .searchInput {
+    margin-left: -50px;
+    max-width: 210px;
+  }
+  .contInter {
+    margin-left: -73px;
+    max-width: 200px;
+  }
+  .divInput {
+    position: relative;
+    left: -90px;
+    max-width: 288px;
+  }
+  .searchButton {
+    /* position: relative; */
+    /* max-width: 90px; */
+    left: 260px;
+  }
+  .createButton {
+    left: 40px;
+  }
+  .homeButton {
+    left: 50px;
+  }
+}
+@media only screen and (max-width: 342px) {
+  .allContainer {
+    margin-left: -20px;
+  }
+  .searchInput {
+    margin-left: -30%;
+    max-width: 200px;
+  }
+  .searchButton {
+    /* scale: 0.9; */
+    left: 237px;
+    width: 100px;
+  }
+  .contInter {
+    margin-left: -80px;
+    max-width: 190px;
+  }
+  .divInput {
+    position: relative;
+    left: -100px;
+    max-width: 290px;
+  }
+  .createButton {
+    scale: 0.8;
+    left: 20px;
+  }
+  .homeButton {
+    scale: 0.8;
+    left: 55px;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .searchInput {
+    margin-left: -40%;
+    max-width: 160px;
+  }
+
+  .searchButton {
+    /* position: absolute; */
+    scale: 0.9;
+    left: 65%;
+    /* width: 20px; */
+    font-size: 10px;
+  }
+  .searchInput::placeholder {
+    position: absolute;
+    scale: 0.6;
+    top: 4px;
+    left: -40px;
+    margin-right: 200px;
+    width: 150%;
+  }
+  .filters > select {
+    width: 50px;
+    font-size: 10px;
+  }
+  .contInter {
+    margin-left: -87px;
+    max-width: 150px;
+  }
+  .divInput {
+    position: relative;
+    left: -120px;
+    max-width: 267px;
+  }
+  .homeButton {
+    left: 30px;
+  }
+  .createButton {
+    left: 0px;
+  }
+}
